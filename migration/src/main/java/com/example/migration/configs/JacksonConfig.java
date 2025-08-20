@@ -20,7 +20,6 @@ public class JacksonConfig {
         mapper.disable(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS);
 
         SimpleModule module = new SimpleModule();
-        //module.addSerializer(LocalDateTime.class, new CustomLocalDateTimeSerializer());
         module.addDeserializer(ZonedDateTime.class, new CustomZonedDateTimeDeserializer());
         module.addDeserializer(LocalDateTime.class, new CustomLocalDateTimeDeserializer());
         mapper.registerModule(module);

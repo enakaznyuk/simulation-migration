@@ -19,10 +19,6 @@ public class ClientService {
         Client client4 = new Client();
         Client client5 = new Client();
         Client client6 = new Client();
-//        Client client7 = new Client();
-//        Client client8 = new Client();
-//        Client client9 = new Client();
-//        Client client0 = new Client();
 
         client1.setAgency("vhh4");
         client1.setFirstName("First");
@@ -79,10 +75,7 @@ public class ClientService {
         clientList.add(client4);
         clientList.add(client5);
         clientList.add(client6);
-//        clientList.add(client7);
-//        clientList.add(client8);
-//        clientList.add(client9);
-//        clientList.add(client0);
+
         return clientList;
     }
 }
